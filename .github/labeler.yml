@@ -1,0 +1,17 @@
+# Configuration for automatic labeling
+# This file should be in .github/labeler.yml
+
+# Label PRs based on file paths
+"module-01": ["assignments/module-01-intro/**"]
+"module-02": ["assignments/module-02-data-structures/**"]
+"documentation": ["docs/**", "*.md"]
+"dashboard": ["dashboard/**"]
+"scripts": ["scripts/**"]
+
+# Label issues based on title patterns
+"bug": ["/bug:/i", "/fix:/i"]
+"enhancement": ["/feat:/i", "/feature:/i"]
+"question": ["/question:/i", "/help:/i"]
+
+# Label assignment submissions
+"assignment": ["/submit:/i"]

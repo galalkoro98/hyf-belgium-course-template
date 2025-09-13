@@ -1,0 +1,51 @@
+name: Bug Report
+description: Report a bug or issue in the course materials
+title: "bug: <short description>"
+labels: ["bug"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Bug Title
+      description: Concise description of the bug
+      placeholder: Broken link in module-02 README
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: Detailed description of the issue
+      placeholder: |
+        **Steps to reproduce:**
+        1. Go to...
+        2. Click on...
+        3. See error...
+        
+        **Expected behavior:**
+        Should show...
+        
+        **Actual behavior:**
+        Shows error...
+    validations:
+      required: true
+      
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: Where did you find this bug? (URL or file path)
+      placeholder: https://github.com/HYF-Belgium/repo/blob/main/path/to/file.md
+      
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How critical is this bug?
+      options:
+        - Low (typo, minor issue)
+        - Medium (broken link, confusing instruction)
+        - High (blocking progress, code doesn't work)
+    validations:
+      required: true

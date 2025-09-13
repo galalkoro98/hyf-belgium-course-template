@@ -1,0 +1,20 @@
+name: Release Drafter
+# description: Automatically draft release notes from pull requests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    types: [opened, reopened, closed]
+    branches: [main]
+
+jobs:
+  update_release_draft:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Draft Release
+        uses: release-drafter/release-drafter@v5
+        with:
+          config-name: release-drafter.yml
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

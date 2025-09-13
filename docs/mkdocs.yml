@@ -1,0 +1,57 @@
+site_name: HYF Belgium - Course Documentation
+site_description: Documentation for HackYourFuture Belgium course materials
+site_url: https://hyf-belgium.github.io/course-template/
+repo_url: https://github.com/HYF-Belgium/course-template
+repo_name: HYF-Belgium/course-template
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: dark
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.details
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Syllabus: syllabus.md
+  - Modules: modules.md
+  - Assignments:
+    - Module 1: assignments/module-01-intro/README.md
+    - Module 2: assignments/module-02-data-structures/README.md
+  - Contributing: ../CONTRIBUTING.md
+  - Code of Conduct: ../CODE_OF_CONDUCT.md
+
+plugins:
+  - search
+  - mkdocs-material
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HYF-Belgium
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/hackyourfuture

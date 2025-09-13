@@ -1,0 +1,52 @@
+name: Feature Request
+description: Suggest a new feature or improvement for the course
+title: "feat: <short description>"
+labels: ["enhancement"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Feature Title
+      description: Brief description of your suggestion
+      placeholder: Add more examples to module-03
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: Detailed explanation of your suggestion and why it would be helpful
+      placeholder: |
+        **What problem does this solve?**
+        Students are struggling with...
+        
+        **Suggested solution:**
+        Add more examples showing...
+        
+        **Alternative solutions:**
+        Could also consider...
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this feature?
+      options:
+        - Low (nice to have)
+        - Medium (would improve learning experience)
+        - High (critical for student success)
+        
+  - type: checkboxes
+    id: related
+    attributes:
+      label: Related Areas
+      description: Which parts of the course would this affect?
+      options:
+        - label: Assignments
+        - label: Documentation
+        - label: Lectures
+        - label: Exercises
+        - label: Other

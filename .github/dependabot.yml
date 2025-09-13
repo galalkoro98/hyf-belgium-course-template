@@ -1,0 +1,34 @@
+# Configuration for Dependabot security updates
+# This file should be in .github/dependabot.yml
+
+version: 2
+updates:
+  # Update npm dependencies
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+      - "javascript"
+    commit-message:
+      prefix: "📦"
+      include: "scope"
+      
+  # Update GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    labels:
+      - "dependencies"
+      - "github-actions"
+      
+  # Update Docker dependencies if used
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    labels:
+      - "dependencies"
+      - "docker"

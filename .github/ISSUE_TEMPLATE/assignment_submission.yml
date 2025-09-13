@@ -1,0 +1,30 @@
+name: Assignment Submission
+description: Submit your homework assignment for grading
+title: "submit: <module> - <username>"
+labels: ["assignment"]
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module Name
+      description: Which module is this assignment for?
+      placeholder: module-01-intro
+    validations:
+      required: true
+      
+  - type: input
+    id: pr
+    attributes:
+      label: Pull Request URL
+      description: Link to your pull request with the assignment solution
+      placeholder: https://github.com/HackYourFutureBelgium/hyf-belgium-course-template/pull/1
+      # placeholder: https://github.com/HYF-Belgium/username-repo/pull/1
+    validations:
+      required: true
+      
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes for Graders
+      description: Any additional information or comments about your submission
+      placeholder: I had trouble with part 3, please provide feedback...

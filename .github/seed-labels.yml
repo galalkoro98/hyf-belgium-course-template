@@ -1,0 +1,50 @@
+# Configuration for initial repository labels
+# This file should be in .github/seed-labels.yml
+
+- name: "bug"
+  color: "d73a4a"
+  description: "Something isn't working"
+  
+- name: "enhancement"
+  color: "a2eeef"
+  description: "New feature or improvement"
+  
+- name: "documentation"
+  color: "0075ca"
+  description: "Documentation improvements"
+  
+- name: "assignment"
+  color: "fbca04"
+  description: "Student assignment submission"
+  
+- name: "question"
+  color: "d876e3"
+  description: "Question or help needed"
+  
+- name: "dependencies"
+  color: "0366d6"
+  description: "Dependency updates"
+  
+- name: "ci"
+  color: "1d76db"
+  description: "CI/CD related changes"
+  
+- name: "good first issue"
+  color: "7057ff"
+  description: "Good for newcomers"
+  
+- name: "help wanted"
+  color: "008672"
+  description: "Extra attention is needed"
+  
+- name: "priority: high"
+  color: "b60205"
+  description: "High priority issue"
+  
+- name: "priority: medium"
+  color: "ff9f1c"
+  description: "Medium priority issue"
+  
+- name: "priority: low"
+  color: "0e8a16"
+  description: "Low priority issue"
